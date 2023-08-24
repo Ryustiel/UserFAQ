@@ -1,0 +1,101 @@
+{
+    "Première idée du problème": {
+        "texte": "Sélectionnez ce qui s'apparente le plus à votre problème parmi les options juste en dessous !",
+        "options": {
+            "Pas d'internet": {},
+            "Pas de son": {},
+            "Je viens d'essayer de me connecter à mon poste": {},
+            "Quelque chose ne va pas avec MCS": {},
+            "Je voudrais ajouter une image au tutoriel": {
+                "prochain": "Trouver le dossier image"
+            },
+            "Aucune de ces options ne ressemble à mon problème !": {
+                "prochain": "Contacter Patricia"
+            }
+        }
+    },
+    "Trouver le dossier image": {
+        "image":"Dossier IMAGE",
+        "texte":"Dans le dossier qui contient le programme, cherchez un sous dossier qui s'appelle 'images'. Clickez dessus pour l'ouvrir.",
+        "options": {
+            "J'ai ouvert le dossier images": {
+                "prochain": "Trouver une image à mettre"
+            },
+            "Je ne le vois pas...": {
+                "prochain": "Contacter Patricia"
+            } 
+        }
+    },
+    "Contacter Patricia": {
+        "texte": "Vous savez comment m'appeler !\n\nJe suis disponible de ... à ... toute la semaine."
+    },
+    "Trouver une image à mettre": {
+        "texte":"Allez sur google et tapez \"jolies photos de chat\".",
+        "options": {
+            "Je n'arrive pas à ouvrir mon navigateur": {},
+            "J'ai trouvé la photo mais je ne sais pas comment la télécharger": {
+                "prochain": "Télécharger une photo trouvée sur google"
+            },
+            "J'ai trouvé la photo et je l'ai téléchargé !": {
+                "prochain": "Ajouter une image au dossier"
+            }
+        }
+    },
+    "Télécharger une photo trouvée sur google": {
+        "texte": "faites un clic droit sur l'image, cherchez l'option télécharger l'image dans la liste",
+        "options": {
+            "C'est bon j'ai la photo !": {
+                "retour": ["J'ai trouvé la photo et je l'ai téléchargé !"]
+            }
+        }
+    },
+    "Ajouter une image au dossier": {
+        "texte": "Déplacez l'image dans le dossier images que vous aviez ouvert auparavant",
+        "options": {
+            "Je ne trouve plus mon image": {
+                "prochain": "Retrouver une image téléchargée"
+            },
+            "C'est fait": {
+                "prochain": "Ouvrir le fichier tutoriel pour ajouter une image"
+            }
+        }
+    },
+    "Ouvrir le fichier tutoriel pour ajouter une image": {
+        "texte": "ouvrez le fichier vignettes.json dans le dossier du programme.",
+        "options": {
+            "C'est fait": {
+                "prochain": "Ajouter une image au tutoriel"
+            }
+        }
+    },
+    "Ajouter une image au tutoriel": {
+        "texte": "D'ici, vous pouvez créer une nouvelle rubrique ou ajouter une image à une rubrique existante.", 
+        "options": {
+            "Je veux ajouter une image à une rubrique existante": {
+                "prochain": "Ajouter un champ image à une rubrique"
+            },
+            "Je veux créer une nouvelle rubrique": {
+                "prochain": "Créer une nouvelle rubrique"
+            }
+        }
+    },
+    "Créer une nouvelle rubrique": {
+        "texte": "Descendez jusqu'en bas du fichier, juste avant le dernier crochet pointu, et ajoutez une virgule, des guillemets \"\", un symbole colon (deux points) :, et des crochets pointus {} comme sur la photo. N'oubliez pas la virgule !",
+        "options": {
+            "C'est bon": {
+                "prochain": "Saisir les champs d'une nouvelle rubrique"
+            }
+        }
+    },
+    "Saisir les champs d'une nouvelle rubrique": {
+        "texte": "Entre les guillemets, saisissez le nom de votre rubrique. Entre les crochets pointus, ajoutez les champs \"texte\", \"image\", et \"options\" en suivant le modèle des rubriques déjà crées précédemment. N'oubliez pas de sauter des lignes pour pouvoir vous relire plus facilement.",
+        "options": {
+            "J'ai fini": {
+
+            },
+            "J'ai ajouté ma rubrique, le site internet ne fonctionne plus !": {
+                "prochain": "Contactez Raphael"
+            }
+        }
+    }
+}

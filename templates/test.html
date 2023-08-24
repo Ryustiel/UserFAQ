@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clickable Divs</title>
+    <style>
+        .animation {
+            animation: glow 1s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+            }
+            }
+
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const animated = document.querySelector('[data-testid="stVerticalBlock"] > [style*="flex-direction: column;"]');
+
+        console.log(`breakpoint`)
+        console.log(animated)
+
+        if (animated) {
+            // Add the animation class to start the glow animation
+            animated.classList.add('animation');
+
+            console.log(`breakpoint 2`)
+
+            // After a certain duration, remove the animation class to stop the glow
+            setTimeout(() => {
+                console.log(`breakpoint 3`)
+                animated.classList.remove('animation');
+            }, 2000); // Change the duration as needed (3000ms = 3 seconds)
+        }
+    });
+    </script>
+</head>
+<body>
+    <div~ data-testid="stVerticalBlock">
+        <div style="flex-direction: column; background-color: orange;">
+            blah
+        </div>
+    </div>
+    <div id = "result"></div>
+</body>
+</html>
